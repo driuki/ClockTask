@@ -1,0 +1,6 @@
+C:\Users\Driuki\source\repos\ClockTask\ClockTask\bin\Debug\ClockTask.exe.config
+C:\Users\Driuki\source\repos\ClockTask\ClockTask\bin\Debug\ClockTask.exe
+C:\Users\Driuki\source\repos\ClockTask\ClockTask\bin\Debug\ClockTask.pdb
+C:\Users\Driuki\source\repos\ClockTask\ClockTask\obj\Debug\ClockTask.csprojAssemblyReference.cache
+C:\Users\Driuki\source\repos\ClockTask\ClockTask\obj\Debug\ClockTask.exe
+C:\Users\Driuki\source\repos\ClockTask\ClockTask\obj\Debug\ClockTask.pdb
