@@ -18,17 +18,15 @@ namespace ClockTask {
         public Minutes() {
         }
 
-        public void set_Minute(int minute) {
-            this.minute = minute;
-        }
-
-        public double get_Minute() {
-            return minute;
-        }
-
-        public double get_MinuteAngleTotal()
+        public double MinuteAngleTotal
         {
-            return minuteAngleTotal;
+            get { return minuteAngleTotal; }
+        }
+
+        public int Minute
+        {
+            get { return minute; }
+            set { minute = value; }
         }
 
         // Method that counts total minute arrow angle 

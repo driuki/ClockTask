@@ -18,14 +18,14 @@ namespace ClockTask {
         }
 
         // Takes from Program class angles and sets 
-        public void set_HourArrowTotal(double angle)
+        public double HourArrowTotal
         {
-            this.hourArrowTotal = angle;
+            set { hourArrowTotal = value; }
         }
 
-        public void set_MinuteArrowTotal(double angle)
+        public double MinuteArrowTotal
         {
-            this.minuteArrowTotal = angle;
+            set { minuteArrowTotal = value; }
         }
 
         /* This method let's user to write a hour number in console

@@ -20,9 +20,9 @@ namespace ClockTask {
 
             // You can write your own time and set it
             int hours = engine.TakeHoursNumber();
-            H.set_Hour(hours);
+            H.Hour = hours;
             int minutes = engine.TakeMinutesNumber();
-            Min.set_Minute(minutes);
+            Min.Minute = minutes;
 
             Console.WriteLine("{0}H:{1}MIN", hours, minutes);
 
@@ -34,11 +34,11 @@ namespace ClockTask {
             Min.TotalMinuteAngle();
 
             // Applies total angles and then sets into engine, to count positive angle between arrows 
-            double totalHArrowAngle = H.get_HourAngleTotal();
-            double totalMinArrowAngle = Min.get_MinuteAngleTotal();
+            double totalHArrowAngle = H.HourAngleTotal;
+            double totalMinArrowAngle = Min.MinuteAngleTotal;
 
-            engine.set_HourArrowTotal(totalHArrowAngle);
-            engine.set_MinuteArrowTotal(totalMinArrowAngle);
+            engine.HourArrowTotal = totalHArrowAngle;
+            engine.MinuteArrowTotal = totalMinArrowAngle;
 
             // Print returned positive angle
             Console.WriteLine(engine.PositiveFinalAngle());

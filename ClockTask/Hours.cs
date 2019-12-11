@@ -13,24 +13,22 @@ namespace ClockTask {
         // Angle movement of hour arrow by one minute is: HourAngle / 60 - degrees
         public const double HourAngleShiftByMinute = 0.5;
 
-        public double hour;
+        public int hour;
 
         public double hourAngleTotal;
 
         public Hours() {
         }
 
-        public void set_Hour(double hour) {
-            this.hour = hour;
-        }
-
-        public double get_Hour() {
-            return hour;
-        }
-
-        public double get_HourAngleTotal()
+        public double HourAngleTotal
         {
-            return hourAngleTotal;
+            get { return hourAngleTotal; }
+        }
+
+        public int Hour
+        {
+            get { return hour; }
+            set { hour = value; }
         }
 
         /* Method takes parameter of minutes and counts total angle 
