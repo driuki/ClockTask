@@ -9,32 +9,32 @@ namespace ClockTask {
     class Hours {
 
         // Min angle of one hour is: 360 / 12 - degrees
-        public const int HourAngle = 30;
+        public const int HOURANGLE = 30;
         // Angle movement of hour arrow by one minute is: HourAngle / 60 - degrees
-        public const double HourAngleShiftByMinute = 0.5;
+        public const double HOURSHIFTMINUTE = 0.5;
 
-        public int hour;
+        public int Hour { get; set; }
 
-        public double hourAngleTotal;
+        public double HourAngleTotal { get; set; }
 
         public Hours() {
         }
 
-        public double HourAngleTotal
-        {
-            get { return hourAngleTotal; }
-        }
+     //   public double HourAngleTotal
+     //   {
+     //       get { return hourAngleTotal; }
+     //   }
 
-        public int Hour
-        {
-            get { return hour; }
-            set { hour = value; }
-        }
-
+     //   public int Hour
+    //    {
+     //       get { return hour; }
+     //       set { hour = value; }
+     //   }
+    
         /* Method takes parameter of minutes and counts total angle 
            of hour arrow from starting point - 0 degrees*/
         public void TotalHourAngle(double minutes) {
-            hourAngleTotal = (this.hour * HourAngle) + (minutes * HourAngleShiftByMinute);
+            HourAngleTotal = (this.Hour * HOURANGLE) + (minutes * HOURSHIFTMINUTE);
         }
 
     }

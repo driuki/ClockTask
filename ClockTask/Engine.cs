@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ClockTask {
     class Engine {
 
-        public double totalAngleDifference;
+        public double TotalAngleDifference { get; set; }
 
         public double hourArrowTotal;
 
@@ -83,13 +83,13 @@ namespace ClockTask {
         public double PositiveFinalAngle() {
 
             // Angle diference
-            totalAngleDifference = hourArrowTotal - minuteArrowTotal;
+            TotalAngleDifference = hourArrowTotal - minuteArrowTotal;
 
-            if(totalAngleDifference < 0) {
-                totalAngleDifference *= -1;
+            if(TotalAngleDifference < 0) {
+                TotalAngleDifference *= -1;
             }
 
-            return totalAngleDifference;
+            return TotalAngleDifference;
 
         }
     }
